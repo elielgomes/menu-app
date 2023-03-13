@@ -13,6 +13,22 @@ export const ProductList: React.FC<IProps> = ({ section }) => {
 
 	const { searchInput } = React.useContext(SearchInputContext) as ISearchInput;
 
+	const [scrollTop, setScrollTop] = React.useState(0);
+	const [visibleItems, setVisibleItems] = React.useState(15);
+	const visibleProducts = [];
+
+	React.useEffect(() => {
+		if (typeof window !== "undefined") {
+			const handleScroll = () => {
+				if (window.scrollY > 0) {
+					setScrollTop(window.scrollY);
+					setVisibleItems(Math.trunc(window.scrollY / 100));
+				}
+			};
+			window.addEventListener("scroll", handleScroll);
+		}
+	}, []);
+
 	const filterProduct = () => (
 		!searchInput.trim() || !searchInput
 			? (
@@ -28,9 +44,27 @@ export const ProductList: React.FC<IProps> = ({ section }) => {
 			)
 	);
 
+	for (let i = 0; i < visibleItems; i++) {
+		if (visibleItems <= filterProduct().length - 1) {
+			const product = filterProduct();
+			visibleProducts.push(product[visibleItems]);
+		}
+	}
+
 	return (
-		<Flex flexDirection="column" gap={5} pt={10}>
-			{filterProduct().map((item) => (
+		<Flex flexDirection="column" gap={5} pt={10} minH="200vh">
+			{/* {filterProduct().map((item) => (
+				<>
+					<ProductCard
+						key={item.name}
+						image={item.image}
+						name={item.name}
+						price={item.price}
+					/>
+					<Divider width="90%" margin="0 auto" />
+				</>
+			))} */}
+			{visibleProducts.map((item) => (
 				<>
 					<ProductCard
 						key={item.name}
@@ -41,6 +75,7 @@ export const ProductList: React.FC<IProps> = ({ section }) => {
 					<Divider width="90%" margin="0 auto" />
 				</>
 			))}
+
 		</Flex>
 	);
 };

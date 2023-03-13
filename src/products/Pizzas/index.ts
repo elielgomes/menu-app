@@ -31,4 +31,124 @@ export const Pizzas: IProduct[] = [
 		price: "12,34",
 		image: "products/pizzas/pizza.svg",
 	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
+	{
+		name: "Pizza Calabresa",
+		price: "12,34",
+		image: "products/pizzas/pizza.svg",
+	},
 ];
