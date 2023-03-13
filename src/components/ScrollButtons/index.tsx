@@ -20,6 +20,7 @@ import {
 	Portions,
 } from "@/products";
 import { ActiveSectionContext, IActiveSection } from "@/contexts/activeSection";
+import { SearchInputContext, ISearchInput } from "@/contexts/searchInput";
 
 interface IProductButton {
 	name: string;
@@ -53,6 +54,7 @@ const productButtons: IProductButton[] = [
 export const ScrollButtons: React.FC = () => {
 
 	const { activeSection, setActiveSection } = React.useContext(ActiveSectionContext) as IActiveSection;
+	const { setSearchInput } = React.useContext(SearchInputContext) as ISearchInput;
 
 	return (
 		<Box overflow="hidden" w="100%">
@@ -94,7 +96,10 @@ export const ScrollButtons: React.FC = () => {
 						<ButtonIconProduct
 							icon={icon}
 							isActive={section === activeSection ? true : false}
-							onClick={() => setActiveSection(section)}
+							onClick={() => {
+								setActiveSection(section);
+								setSearchInput("");
+							}}
 						/>
 					</SwiperSlide>
 				))}

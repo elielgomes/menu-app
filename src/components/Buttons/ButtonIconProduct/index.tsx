@@ -23,6 +23,9 @@ export const ButtonIconProduct: React.FC<IProps> = ({ icon, onClick, isActive })
 			_hover={{
 				bgColor: "none",
 			}}
+			_active={{
+				bgColor: "none",
+			}}
 		>
 			<Icon
 				className="svg-icon"
