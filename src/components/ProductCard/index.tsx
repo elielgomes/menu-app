@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Heading, Image } from "@chakra-ui/react";
+import { Flex, Heading, Image, Box } from "@chakra-ui/react";
 import { IProduct } from "@/interfaces";
 
 export const ProductCard: React.FC<IProduct> = ({ name, image, price }) => (
@@ -8,15 +8,29 @@ export const ProductCard: React.FC<IProduct> = ({ name, image, price }) => (
 		alignItems="center"
 		justifyContent="space-between"
 		gap="10px"
+		bgColor="white"
+		height="100px"
+		borderRadius={20}
+		boxShadow="0px 5px 10px #00000034"
+		position="relative"
+		width="85%"
 	>
 		<Image
 			alt={name}
 			src={image}
-			width={{ base: 100, md: 120 }}
-			height={{ base: 100, md: 120 }}
+			width="80px"
+			height="80px"
 			borderRadius={30}
+			position="absolute"
+			left="-40px"
+			boxShadow="0px 0px 10px #00000034"
+			loading="lazy"
 		/>
-		<Box width={{ base: 110, md: 130, lg: 180 }} maxHeight={{ base: 100, md: 120 }}>
+		<Box
+			position="absolute"
+			left="50px"
+			width={{ base: 110, md: 130, lg: 180 }}
+			maxHeight={{ base: 100, md: 120 }}>
 			<Heading
 				color="secondary.400"
 				fontSize={{ base: 18, md: 20 }}
@@ -26,7 +40,11 @@ export const ProductCard: React.FC<IProduct> = ({ name, image, price }) => (
 				{name}
 			</Heading>
 		</Box>
-		<Box width={{ base: "80px", md: "90px" }}>
+		<Box
+			position="absolute"
+			right="10px"
+			width={{ base: "80px", md: "90px" }}
+		>
 			<Heading
 				color="gray.400"
 				fontSize={{ base: 18, md: 20 }}

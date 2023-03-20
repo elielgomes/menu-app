@@ -16,6 +16,7 @@ export const theme = extendTheme(
 				"html, body": {
 					fontFamily: roboto.style.fontFamily,
 					bgColor: "gray.50",
+					overflowX: "hidden",
 				},
 			},
 		},

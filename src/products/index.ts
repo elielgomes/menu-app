@@ -1,16 +1,16 @@
-import { Drinks } from "./Drinks";
-import { Hamburguers } from "./Hamburguers";
+import { Bebidas } from "./Bebidas";
+import { Lanches } from "./Lanches";
 import { Pizzas } from "./Pizzas";
-import { Portions } from "./Portions";
+import { Porcoes } from "./Porcoes";
 
-export { Drinks } from "./Drinks";
-export { Hamburguers } from "./Hamburguers";
+export { Bebidas } from "./Bebidas";
+export { Lanches } from "./Lanches";
 export { Pizzas } from "./Pizzas";
-export { Portions } from "./Portions";
+export { Porcoes } from "./Porcoes";
 
 export const AllProducts = [
-	...Drinks,
-	...Hamburguers,
+	...Bebidas,
+	...Lanches,
 	...Pizzas,
-	...Portions,
+	...Porcoes,
 ];
