@@ -1,6 +1,11 @@
 import React from "react";
-import { Flex, Heading, Image, Box } from "@chakra-ui/react";
+import {
+	Flex,
+	Heading,
+	Box,
+} from "@chakra-ui/react";
 import { IProduct } from "@/interfaces";
+import Image from "next/image";
 
 export const ProductCard: React.FC<IProduct> = ({ name, image, price }) => (
 	<Flex
@@ -15,17 +20,24 @@ export const ProductCard: React.FC<IProduct> = ({ name, image, price }) => (
 		position="relative"
 		width="85%"
 	>
-		<Image
-			alt={name}
-			src={image}
-			width="80px"
-			height="80px"
+		<Box
 			borderRadius={30}
+			overflow="hidden"
 			position="absolute"
+			height="80px"
+			width="80px"
 			left="-40px"
 			boxShadow="0px 0px 10px #00000034"
-			loading="lazy"
-		/>
+			bgColor="gray.300"
+		>
+			<Image
+				alt="Teste"
+				src={image}
+				height={80}
+				width={80}
+				loading="lazy"
+			/>
+		</Box>
 		<Box
 			position="absolute"
 			left="50px"

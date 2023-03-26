@@ -3,10 +3,10 @@ import {
 	Flex,
 	Box,
 	Heading,
-	Image,
 } from "@chakra-ui/react";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
+import Image from "next/image";
 
 interface IProps {
 	title: string;
@@ -27,18 +27,24 @@ export const MenuCard: React.FC<IProps> = ({ title, image, route }) => (
 		alignItems="center"
 		position="relative"
 	>
-
-		<Image
-			alt="Teste"
-			src={image}
+		<Box
+			borderRadius={30}
+			overflow="hidden"
+			position="absolute"
 			height="80px"
 			width="80px"
-			borderRadius={30}
-			position="absolute"
 			left="-40px"
 			boxShadow="0px 0px 10px #00000034"
-			loading="lazy"
-		/>
+			bgColor="gray.300"
+		>
+			<Image
+				alt="Teste"
+				src={image}
+				height={80}
+				width={80}
+				loading="lazy"
+			/>
+		</Box>
 		<Heading
 			color="secondary.400"
 			position="absolute"

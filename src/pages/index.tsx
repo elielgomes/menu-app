@@ -24,10 +24,10 @@ const Home: NextPage = () => (
 				bgImage="linear-gradient(to right, #803120 30%, #f5f5f5 30%)"
 			>
 				<ContainerApp isHome>
-					<MenuCard title="Pizzas" image="icons/pizzas.jpg" route="/Pizzas" />
-					<MenuCard title="Lanches" image="icons/lanches.jpg" route="/Lanches" />
-					<MenuCard title="Porções" image="icons/porcoes.jpg" route="/Porcoes" />
-					<MenuCard title="Bebidas" image="icons/bebidas.jpg" route="/Bebidas" />
+					<MenuCard title="Pizzas" image="/icons/pizzas.jpg" route="/Pizzas" />
+					<MenuCard title="Lanches" image="/icons/lanches.jpg" route="/Lanches" />
+					<MenuCard title="Porções" image="/icons/porcoes.jpg" route="/Porcoes" />
+					<MenuCard title="Bebidas" image="/icons/bebidas.jpg" route="/Bebidas" />
 				</ContainerApp>
 			</Box>
 		</main>
